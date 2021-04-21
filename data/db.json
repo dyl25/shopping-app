@@ -164,5 +164,69 @@
             "image": "smartphone.jpg",
             "creation_date": "28-11-2020"
         }
-    ]
+    ],
+    "basket": {
+        "products": [
+            {
+                "id": 3,
+                "seller": {
+                    "id": 3,
+                    "name": "Locuste",
+                    "firstname": "Charle",
+                    "email": "Charle@example.com",
+                    "mobile": "045785231"
+                },
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "enceinte"
+                    },
+                    {
+                        "id": 2,
+                        "name": "androïd"
+                    },
+                    {
+                        "id": 6,
+                        "name": "multimedia"
+                    }
+                ],
+                "name": "Enceinte bluethoot",
+                "description": "dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
+                "price": 155.45,
+                "quantity": 566,
+                "image": "enceinte.png",
+                "creation_date": "07-12-2020"
+            },
+            {
+                "id": 6,
+                "seller": {
+                    "id": 6,
+                    "name": "Ranius",
+                    "firstname": "Emilie",
+                    "email": "Emilie@example.com",
+                    "mobile": "0652145235"
+                },
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "gsm"
+                    },
+                    {
+                        "id": 5,
+                        "name": "apple"
+                    },
+                    {
+                        "id": 6,
+                        "name": "multimedia"
+                    }
+                ],
+                "name": "Smartphone",
+                "description": "es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
+                "price": 325.42,
+                "quantity": 0,
+                "image": "smartphone.jpg",
+                "creation_date": "28-11-2020"
+            }
+        ]
+    }
 }

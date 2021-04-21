@@ -1,0 +1,40 @@
+.tag:not(body){
+    line-height: 1.7;
+}
+
+.no-border {
+    border: none;
+}
+
+.is-clickable {
+    cursor: pointer !important;
+}
+
+.notif-container {
+    top: 10%;
+    right: 7%;
+    max-width: 86%;
+
+    display: block;
+    position: fixed;
+    z-index: 10000;
+}
+
+.toast-notif {
+    top: 0px;
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+    /*opacity: 0;*/
+    margin-top: -40px;
+}
+
+.hoverable {
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.hoverable:hover {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.ml-auto {
+    margin-left: auto;
+}
