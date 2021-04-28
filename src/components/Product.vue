@@ -14,7 +14,7 @@
             <span v-for="tag in product.tags" :key="tag.id" class="tag is-primary is-light">{{ tag.name }}</span>
         </div>
         <div>
-            <span class="mr-5" :class="{'red-text': inStock}">Quantité: {{ product.quantity }}</span>
+            <span class="mr-5" :class="{'has-text-danger': !inStock}">Quantité: {{ product.quantity }}</span>
             <span>{{ product.creation_date }}</span>
         </div>
         <button @click="addProduct" class="button is-fullwidth is-success">+ Ajouter</button>

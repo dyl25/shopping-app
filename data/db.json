@@ -1,232 +1,203 @@
 {
-    "products": [
+  "products": [
+    {
+      "id": 1,
+      "seller": {
+        "id": 1,
+        "name": "VanHallen",
+        "firstname": "Marc",
+        "email": "fake@example.com",
+        "mobile": "0789223366"
+      },
+      "tags": [
         {
-            "id": 1,
-            "seller": {
-                "id": 1,
-                "name": "VanHallen",
-                "firstname": "Marc",
-                "email": "fake@example.com",
-                "mobile": "0789223366"
-            },
-            "tags": [
-                {
-                    "id": 1,
-                    "name": "montre"
-                },
-                {
-                    "id": 2,
-                    "name": "androïd"
-                },
-                {
-                    "id": 3,
-                    "name": "bracelet"
-                }
-            ],
-            "name": "Montre connectée",
-            "description": "lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor",
-            "price": 69.50,
-            "quantity": 211,
-            "image": "connectedWatch.jpg",
-            "creation_date": "15-09-2020"
+          "id": 1,
+          "name": "montre"
         },
         {
-            "id": 2,
-            "seller": {
-                "id": 2,
-                "name": "Vaneuver",
-                "firstname": "Henri",
-                "email": "Hneri@example.com",
-                "mobile": "0895263254"
-            },
-            "tags": [
-                {
-                    "id": 4,
-                    "name": "tablette"
-                },
-                {
-                    "id": 5,
-                    "name": "apple"
-                }
-            ],
-            "name": "Tablette",
-            "description": "lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor",
-            "price": 233.05,
-            "quantity": 13,
-            "image": "tablette.jpg",
-            "creation_date": "20-03-2019"
+          "id": 2,
+          "name": "androïd"
         },
         {
-            "id": 3,
-            "seller": {
-                "id": 3,
-                "name": "Locuste",
-                "firstname": "Charle",
-                "email": "Charle@example.com",
-                "mobile": "045785231"
-            },
-            "tags": [
-                {
-                    "id": 1,
-                    "name": "enceinte"
-                },
-                {
-                    "id": 2,
-                    "name": "androïd"
-                },
-                {
-                    "id": 6,
-                    "name": "multimedia"
-                }
-            ],
-            "name": "Enceinte bluethoot",
-            "description": "dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
-            "price": 155.45,
-            "quantity": 566,
-            "image": "enceinte.png",
-            "creation_date": "07-12-2020"
-        },
-        {
-            "id": 4,
-            "seller": {
-                "id": 4,
-                "name": "Pelams",
-                "firstname": "Miriame",
-                "email": "Miriame@example.com",
-                "mobile": "0985562312"
-            },
-            "tags": [
-                {
-                    "id": 7,
-                    "name": "usb"
-                }
-            ],
-            "name": "Evapolar USB",
-            "description": "es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
-            "price": 99.35,
-            "quantity": 0,
-            "image": "evapolar.png",
-            "creation_date": "01-01-2017"
-        },
-        {
-            "id": 5,
-            "seller": {
-                "id": 5,
-                "name": "Ruth",
-                "firstname": "Thibault",
-                "email": "Thibault@example.com",
-                "mobile": "0325456987"
-            },
-            "tags": [
-                {
-                    "id": 1,
-                    "name": "meteo"
-                },
-                {
-                    "id": 2,
-                    "name": "androïd"
-                }
-            ],
-            "name": "Station meteo",
-            "description": "es dolor dolor es dolor lorem ipsum dolor es dol dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
-            "price": 114.25,
-            "quantity": 12,
-            "image": "meteo.jpg",
-            "creation_date": "17-06-2018"
-        },
-        {
-            "id": 6,
-            "seller": {
-                "id": 6,
-                "name": "Ranius",
-                "firstname": "Emilie",
-                "email": "Emilie@example.com",
-                "mobile": "0652145235"
-            },
-            "tags": [
-                {
-                    "id": 1,
-                    "name": "gsm"
-                },
-                {
-                    "id": 5,
-                    "name": "apple"
-                },
-                {
-                    "id": 6,
-                    "name": "multimedia"
-                }
-            ],
-            "name": "Smartphone",
-            "description": "es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
-            "price": 325.42,
-            "quantity": 0,
-            "image": "smartphone.jpg",
-            "creation_date": "28-11-2020"
+          "id": 3,
+          "name": "bracelet"
         }
-    ],
-    "basket": {
-        "products": [
+      ],
+      "name": "Montre connectée",
+      "description": "lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor",
+      "price": 69.5,
+      "quantity": 211,
+      "image": "connectedWatch.jpg",
+      "creation_date": "15-09-2020"
+    },
+    {
+      "id": 2,
+      "seller": {
+        "id": 2,
+        "name": "Vaneuver",
+        "firstname": "Henri",
+        "email": "Hneri@example.com",
+        "mobile": "0895263254"
+      },
+      "tags": [
+        {
+          "id": 4,
+          "name": "tablette"
+        },
+        {
+          "id": 5,
+          "name": "apple"
+        }
+      ],
+      "name": "Tablette",
+      "description": "lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor",
+      "price": 233.05,
+      "quantity": 13,
+      "image": "tablette.jpg",
+      "creation_date": "20-03-2019"
+    },
+    {
+      "id": 3,
+      "seller": {
+        "id": 3,
+        "name": "Locuste",
+        "firstname": "Charle",
+        "email": "Charle@example.com",
+        "mobile": "045785231"
+      },
+      "tags": [
+        {
+          "id": 1,
+          "name": "enceinte"
+        },
+        {
+          "id": 2,
+          "name": "androïd"
+        },
+        {
+          "id": 6,
+          "name": "multimedia"
+        }
+      ],
+      "name": "Enceinte bluethoot",
+      "description": "dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
+      "price": 155.45,
+      "quantity": 566,
+      "image": "enceinte.png",
+      "creation_date": "07-12-2020"
+    },
+    {
+      "id": 4,
+      "seller": {
+        "id": 4,
+        "name": "Pelams",
+        "firstname": "Miriame",
+        "email": "Miriame@example.com",
+        "mobile": "0985562312"
+      },
+      "tags": [
+        {
+          "id": 7,
+          "name": "usb"
+        }
+      ],
+      "name": "Evapolar USB",
+      "description": "es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
+      "price": 99.35,
+      "quantity": 0,
+      "image": "evapolar.png",
+      "creation_date": "01-01-2017"
+    },
+    {
+      "id": 5,
+      "seller": {
+        "id": 5,
+        "name": "Ruth",
+        "firstname": "Thibault",
+        "email": "Thibault@example.com",
+        "mobile": "0325456987"
+      },
+      "tags": [
+        {
+          "id": 1,
+          "name": "meteo"
+        },
+        {
+          "id": 2,
+          "name": "androïd"
+        }
+      ],
+      "name": "Station meteo",
+      "description": "es dolor dolor es dolor lorem ipsum dolor es dol dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
+      "price": 114.25,
+      "quantity": 12,
+      "image": "meteo.jpg",
+      "creation_date": "17-06-2018"
+    },
+    {
+      "id": 6,
+      "seller": {
+        "id": 6,
+        "name": "Ranius",
+        "firstname": "Emilie",
+        "email": "Emilie@example.com",
+        "mobile": "0652145235"
+      },
+      "tags": [
+        {
+          "id": 1,
+          "name": "gsm"
+        },
+        {
+          "id": 5,
+          "name": "apple"
+        },
+        {
+          "id": 6,
+          "name": "multimedia"
+        }
+      ],
+      "name": "Smartphone",
+      "description": "es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
+      "price": 325.42,
+      "quantity": 0,
+      "image": "smartphone.jpg",
+      "creation_date": "28-11-2020"
+    }
+  ],
+  "baskets": [
+    {
+      "id": 1,
+      "total": 571.25,
+      "products": [
+        {
+          "id": 5,
+          "seller": {
+            "id": 5,
+            "name": "Ruth",
+            "firstname": "Thibault",
+            "email": "Thibault@example.com",
+            "mobile": "0325456987"
+          },
+          "tags": [
             {
-                "id": 3,
-                "seller": {
-                    "id": 3,
-                    "name": "Locuste",
-                    "firstname": "Charle",
-                    "email": "Charle@example.com",
-                    "mobile": "045785231"
-                },
-                "tags": [
-                    {
-                        "id": 1,
-                        "name": "enceinte"
-                    },
-                    {
-                        "id": 2,
-                        "name": "androïd"
-                    },
-                    {
-                        "id": 6,
-                        "name": "multimedia"
-                    }
-                ],
-                "name": "Enceinte bluethoot",
-                "description": "dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
-                "price": 155.45,
-                "quantity": 566,
-                "image": "enceinte.png",
-                "creation_date": "07-12-2020"
+              "id": 1,
+              "name": "meteo"
             },
             {
-                "id": 6,
-                "seller": {
-                    "id": 6,
-                    "name": "Ranius",
-                    "firstname": "Emilie",
-                    "email": "Emilie@example.com",
-                    "mobile": "0652145235"
-                },
-                "tags": [
-                    {
-                        "id": 1,
-                        "name": "gsm"
-                    },
-                    {
-                        "id": 5,
-                        "name": "apple"
-                    },
-                    {
-                        "id": 6,
-                        "name": "multimedia"
-                    }
-                ],
-                "name": "Smartphone",
-                "description": "es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
-                "price": 325.42,
-                "quantity": 0,
-                "image": "smartphone.jpg",
-                "creation_date": "28-11-2020"
+              "id": 2,
+              "name": "androïd"
             }
-        ]
+          ],
+          "name": "Station meteo",
+          "description": "es dolor dolor es dolor lorem ipsum dolor es dol dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
+          "price": 114.25,
+          "quantity": 12,
+          "basket_quantity": "5",
+          "image": "meteo.jpg",
+          "creation_date": "17-06-2018"
+        }
+      ]
     }
+  ]
 }
