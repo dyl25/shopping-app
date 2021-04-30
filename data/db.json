@@ -168,7 +168,7 @@
   "baskets": [
     {
       "id": 1,
-      "total": 571.25,
+      "total": 437,
       "products": [
         {
           "id": 5,
@@ -193,9 +193,40 @@
           "description": "es dolor dolor es dolor lorem ipsum dolor es dol dolor es dolor dolor es dolor lorem ipsum dolor es dolor dolor es dolor lorem ipsum dolor es dolor",
           "price": 114.25,
           "quantity": 12,
-          "basket_quantity": "5",
+          "basket_quantity": "2",
           "image": "meteo.jpg",
           "creation_date": "17-06-2018"
+        },
+        {
+          "id": 1,
+          "seller": {
+            "id": 1,
+            "name": "VanHallen",
+            "firstname": "Marc",
+            "email": "fake@example.com",
+            "mobile": "0789223366"
+          },
+          "tags": [
+            {
+              "id": 1,
+              "name": "montre"
+            },
+            {
+              "id": 2,
+              "name": "androïd"
+            },
+            {
+              "id": 3,
+              "name": "bracelet"
+            }
+          ],
+          "name": "Montre connectée",
+          "description": "lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor lorem ipsum dolor es dolor",
+          "price": 69.5,
+          "quantity": 211,
+          "image": "connectedWatch.jpg",
+          "creation_date": "15-09-2020",
+          "basket_quantity": "3"
         }
       ]
     }

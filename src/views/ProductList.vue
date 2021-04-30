@@ -8,7 +8,7 @@
     </modal>
 
     <modal @close-modal="closeModal" :data-visible="showModal">
-        <add-product-confirm v-if="selectedProduct" :product="selectedProduct" />
+        <add-product-confirm :data-basket="userBasket" @close-modal="closeModal"  v-if="selectedProduct" :data-product="selectedProduct" />
     </modal>
 
     <div class="columns is-multiline">
@@ -77,6 +77,7 @@ export default {
 
         closeModal() {
             this.showModal = false
+            this.selectedProduct = null
         },
 
         closeModalBasket() {

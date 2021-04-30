@@ -21,15 +21,11 @@
             <div class="level-item has-text-centered">
                 <div>
                     <h3 class="is-inline-block mr-3">
-                        {{ product.name }} ({{ product.price }}€/unité)
+                        {{ product.name }} (<span class="has-text-link">{{ product.price }}€</span>/unité)
                     </h3>
                 </div>
             </div>
-            <div class="level-item has-text-centered">
-                <span class="tag is-info is-light is-inline-block is-medium"
-                    >{{ product.price * product.basket_quantity }} €</span
-                >
-            </div>
+
             <div class="level-item has-text-centered">
                 <div class="select is-primary">
                     <select
@@ -44,6 +40,12 @@
                         ></option>
                     </select>
                 </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+                <span class="tag is-info is-light is-inline-block is-medium"
+                    >{{ product.price * product.basket_quantity }} €</span
+                >
             </div>
 
             <div class="level-item has-text-centered">
