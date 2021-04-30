@@ -55,6 +55,9 @@
                 ></i>
             </div>
         </article>
+        <div class="has-text-centered">
+            <button @click="closeModal" class="button is-danger is-outlined">Fermer</button>
+        </div>
     </div>
 </template>
 
@@ -62,7 +65,7 @@
 import axios from "axios";
 
 export default {
-    props: ["dataVisible", "dataBasket"],
+    props: ["dataBasket"],
 
     data() {
         return {
@@ -80,14 +83,6 @@ export default {
             )
         },
     },
-
-    /* watch: {
-        dataVisible: function (val) {
-            this.visible = val;
-        },
-    },*/
-
-    mounted() {},
 
     methods: {
         updateBasketTotal() {
@@ -124,6 +119,10 @@ export default {
                 )
                 .catch((err) => console.log(err));
         },
+
+        closeModal() {
+            this.$emit('closeModal')
+        }
     },
 };
 </script>

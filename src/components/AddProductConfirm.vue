@@ -57,24 +57,15 @@
 <script>
 import axios from "axios";
 export default {
-    props: ["dataVisible", "dataProduct", "dataBasket"],
+    props: ["dataProduct", "dataBasket"],
 
     data() {
         return {
             basket: this.dataBasket,
             product: this.dataProduct,
-            visible: this.dataVisible,
             basketQty: 1,
         };
     },
-
-    watch: {
-        dataVisible: function (val) {
-            this.visible = val;
-        },
-    },
-
-    mounted() {},
 
     methods: {
         addProduct() {
@@ -101,7 +92,6 @@ export default {
 
         close() {
             this.$emit("closeModal");
-            this.visible = false;
         },
     },
 };

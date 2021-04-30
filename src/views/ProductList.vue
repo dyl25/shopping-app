@@ -4,7 +4,7 @@
     <button @click="displayBasket" class="button is-link"><i class="fas fa-shopping-basket mr-3"></i> Mon Panier ({{ userBasket.total }} €)</button>
 
     <modal @close-modal="closeModalBasket" :data-visible="showModalBasket">
-        <basket-modal-content v-if="userBasket" :data-basket="userBasket" />
+        <basket-modal-content @close-modal="closeModalBasket" v-if="userBasket" :data-basket="userBasket" />
     </modal>
 
     <modal @close-modal="closeModal" :data-visible="showModal">
