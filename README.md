@@ -1,5 +1,13 @@
 # shopping-app
 
+Simple shopping application made with Vue 3
+
+## Features
+
+- List products with details
+- Add product to your basket
+- View details, modification of your basket, deletion of products in the basket
+
 ## Project setup
 ```
 npm install
@@ -10,15 +18,12 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Launch json server
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+json-server data/db.json
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### See products list
+```
+localhost:8080/products
+```
