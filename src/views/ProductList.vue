@@ -11,9 +11,13 @@
         <add-product-confirm :data-basket="userBasket" @close-modal="closeModal"  v-if="selectedProduct" :data-product="selectedProduct" />
     </modal>
 
+    <modal @close-modal="closeModalModify" :data-visible="productToModify !== null">
+        <modify-product-modal v-if="productToModify" @close-modal="closeModal"  :data-product="productToModify" />
+    </modal>
+
     <div class="columns is-multiline">
         <div v-for="product in products" :key="product.id" class="column is-3">
-            <product @add-product="addToBasket" :product="product" />
+            <product @modify-product="modifyProduct" @add-product="addToBasket" :product="product" />
         </div>
     </div>
 </template>
@@ -23,14 +27,16 @@ import axios from "axios"
 import Product from "../components/Product.vue"
 import Modal from "../components/Modal.vue"
 import AddProductConfirm from "../components/AddProductConfirm.vue"
-import BasketModalContent from "../components/BasketModalContent"
+import BasketModalContent from "../components/BasketModalContent.vue"
+import ModifyProductModal from "../components/ModifyProductModal.vue"
 
 export default {
     components: {
         'product': Product,
         'modal': Modal,
         'add-product-confirm': AddProductConfirm,
-        'basket-modal-content': BasketModalContent
+        'basket-modal-content': BasketModalContent,
+        'modify-product-modal': ModifyProductModal
     },
     data() {
         return {
@@ -38,7 +44,9 @@ export default {
             userBasket: null,
             showModal: false,
             showModalBasket: false,
+            showModalModify: false,
             selectedProduct: null,
+            productToModify: null,
             messages: [],
             errors: [],
         };
@@ -75,6 +83,10 @@ export default {
             this.showModal = true
         },
 
+        modifyProduct(productId) {
+            this.productToModify = this.products.find(prod => prod.id === productId)
+        },
+
         closeModal() {
             this.showModal = false
             this.selectedProduct = null
@@ -82,6 +94,11 @@ export default {
 
         closeModalBasket() {
             this.showModalBasket = false
+        },
+
+        closeModalModify() {
+            this.showModalModify = false
+            this.productToModify = null
         },
 
         displayBasket() {

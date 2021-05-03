@@ -1,5 +1,5 @@
 <template>
-    <article class="px-5 py-5 mt-3 hoverable is-clickable">
+    <article @click="modifyProduct" class="px-5 py-5 mt-3 hoverable is-clickable">
         <figure>
             <img :src="'./img/'+product.image" alt="">
         </figure>
@@ -42,6 +42,10 @@ export default {
     methods: {
         addProduct() {
             this.$emit('addProduct', this.product.id);
+        },
+
+        modifyProduct() {
+            this.$emit('modifyProduct', this.product.id)
         }
     },
 };
